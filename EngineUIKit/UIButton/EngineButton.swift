@@ -18,9 +18,9 @@ public class EngineButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public convenience init(frame: CGRect, title: String?, state: UIControl.State, font: UIFont?, color: UIColor?) {
-        self.init(frame: frame)
-        self.setTitle(title, for: state)
+    public convenience init(frame: CGRect?, title: String?, state: UIControl.State?, font: UIFont?, color: UIColor?) {
+        self.init(frame: frame ?? .zero)
+        self.setTitle(title, for: state ?? .normal)
         self.titleLabel?.font = font
         self.backgroundColor = color
         
