@@ -12,6 +12,11 @@
 		C114DB35282B17040060D19A /* EngineUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114DB34282B17040060D19A /* EngineUIKitTests.swift */; };
 		C114DB36282B17040060D19A /* EngineUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C114DB28282B17040060D19A /* EngineUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C114DB41282B1BB20060D19A /* EngineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C114DB40282B1BB20060D19A /* EngineButton.swift */; };
+		C1192A29282D5D0E00C9A05E /* PlanActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A23282D5D0E00C9A05E /* PlanActionView.swift */; };
+		C1192A2A282D5D0E00C9A05E /* FixedActionTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A25282D5D0E00C9A05E /* FixedActionTileView.swift */; };
+		C1192A2B282D5D0E00C9A05E /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A26282D5D0E00C9A05E /* ActionView.swift */; };
+		C1192A2C282D5D0E00C9A05E /* FixedActionTileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A27282D5D0E00C9A05E /* FixedActionTileViewModel.swift */; };
+		C1192A2D282D5D0E00C9A05E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A28282D5D0E00C9A05E /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,11 @@
 		C114DB2F282B17040060D19A /* EngineUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EngineUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C114DB34282B17040060D19A /* EngineUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineUIKitTests.swift; sourceTree = "<group>"; };
 		C114DB40282B1BB20060D19A /* EngineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineButton.swift; sourceTree = "<group>"; };
+		C1192A23282D5D0E00C9A05E /* PlanActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanActionView.swift; sourceTree = "<group>"; };
+		C1192A25282D5D0E00C9A05E /* FixedActionTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedActionTileView.swift; sourceTree = "<group>"; };
+		C1192A26282D5D0E00C9A05E /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		C1192A27282D5D0E00C9A05E /* FixedActionTileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedActionTileViewModel.swift; sourceTree = "<group>"; };
+		C1192A28282D5D0E00C9A05E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,8 @@
 		C114DB27282B17040060D19A /* EngineUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C1192A24282D5D0E00C9A05E /* FixedActions */,
+				C1192A22282D5D0E00C9A05E /* PlayActionView */,
 				C114DB3F282B1AD60060D19A /* UIButton */,
 				C114DB28282B17040060D19A /* EngineUIKit.h */,
 				C114DB29282B17040060D19A /* EngineUIKit.docc */,
@@ -94,6 +106,25 @@
 				C114DB40282B1BB20060D19A /* EngineButton.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		C1192A22282D5D0E00C9A05E /* PlayActionView */ = {
+			isa = PBXGroup;
+			children = (
+				C1192A23282D5D0E00C9A05E /* PlanActionView.swift */,
+			);
+			path = PlayActionView;
+			sourceTree = "<group>";
+		};
+		C1192A24282D5D0E00C9A05E /* FixedActions */ = {
+			isa = PBXGroup;
+			children = (
+				C1192A25282D5D0E00C9A05E /* FixedActionTileView.swift */,
+				C1192A26282D5D0E00C9A05E /* ActionView.swift */,
+				C1192A27282D5D0E00C9A05E /* FixedActionTileViewModel.swift */,
+				C1192A28282D5D0E00C9A05E /* Action.swift */,
+			);
+			path = FixedActions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1192A2B282D5D0E00C9A05E /* ActionView.swift in Sources */,
 				C114DB2A282B17040060D19A /* EngineUIKit.docc in Sources */,
+				C1192A29282D5D0E00C9A05E /* PlanActionView.swift in Sources */,
 				C114DB41282B1BB20060D19A /* EngineButton.swift in Sources */,
+				C1192A2D282D5D0E00C9A05E /* Action.swift in Sources */,
+				C1192A2A282D5D0E00C9A05E /* FixedActionTileView.swift in Sources */,
+				C1192A2C282D5D0E00C9A05E /* FixedActionTileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
