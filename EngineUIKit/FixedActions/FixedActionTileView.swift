@@ -24,16 +24,19 @@ public class FixedActionTileView: UIView {
         static let uninitalized = Configuration(subViewModels: nil)
     }
     
-    var ViewModel: FixedActionTileViewModel? {
+    public var ViewModel: FixedActionTileViewModel? {
         didSet {
             guard let VM = ViewModel else { return }
             configureViews(VM: VM)
+            
         }
+        
     }
     
-    public init(frame: CGRect, title: String?, image: String?) {
+     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -42,20 +45,24 @@ public class FixedActionTileView: UIView {
     
     func setupViews() {
         addSubview(mainStackView)
-        //mainStackView.pin(to: self)
+        mainStackView.pin(to: self)
     }
     
     func configureViews(VM: FixedActionTileViewModel) {
         if let configuration = VM.config {
             configureItemViews(with: configuration)
+            
         }
     }
     
     func configureItemViews(with configuration: Configuration) {
+       
        // mainStackView.removeFromSuperview()
         configuration.subViewModels?.forEach({ (item) in
             let view = ActionView(viewModel: item)
             mainStackView.addArrangedSubview(view)
         })
+        
     }
+    
 }

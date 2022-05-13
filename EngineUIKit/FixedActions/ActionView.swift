@@ -36,10 +36,15 @@ class ActionView: UIView {
         return iconView
     }()
     
+    
+    
     public init(viewModel: ActionViewModel?) {
+        
         self.viewModel = viewModel
         super.init(frame: .zero)
         setupViews()
+        
+        
     }
     
     required init?(coder: NSCoder) {
@@ -52,6 +57,7 @@ class ActionView: UIView {
         addSubview(titleLabel)
         configureConstraints()
         configureData()
+        
     }
     
     func configureConstraints() {

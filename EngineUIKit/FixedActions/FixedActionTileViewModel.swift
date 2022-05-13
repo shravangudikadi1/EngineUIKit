@@ -7,42 +7,41 @@
 
 import Foundation
 
-class FixedActionTileViewModel {
+public class FixedActionTileViewModel {
     
     var subviewModels: [ActionViewModel]?
     var menuItems: [String]?
     var config: FixedActionTileView.Configuration?
     
-    init() {
-        self.setupViewModels()
+    public init(title: String, image: String) {
+        self.setupViewModels(title: title, image: image)
         
     }
     
-    func setupViewModels() {
+    func setupViewModels(title: String, image: String) {
+        
         self.subviewModels?.removeAll()
         self.subviewModels = [ActionViewModel]()
-       // self.subviewModels?.
-//        self.subviewModels?.append(setupActionFor(actionType: .createMatch))
-//        self.subviewModels?.append(setupActionFor(actionType: .joinTournament))
-//        self.subviewModels?.append(setupActionFor(actionType: .createTeam))
+        self.subviewModels?.append(setupActionFor(title: title, image: image))
         self.config = FixedActionTileView.Configuration(subViewModels: subviewModels)
     }
     
-//    func setupActionFor(actionType: ActionType) -> ActionViewModel {
-//
-//        let action = Action(actionType: actionType)
-//        let eventHandler: () -> Void = { [weak self] in
-//            self?.coordinateTo(actionType: actionType)
-//        }
-//
-//        return ActionViewModel(title: action.title, imageName: action.image, actionType: actionType, tapEventHandler: eventHandler)
-//
-//    }
+    func setupActionFor(title:String, image: String) -> ActionViewModel {
+        let action = Action(title: title, image: image)
+        let eventHandler: () -> Void = { [weak self] in
+            //self?.coordinateTo(actionType: actionType)
+        }
+        
+        return ActionViewModel(title: action.title, imageName: action.image, tapEventHandler: eventHandler)
+        
+    }
     
 //    func coordinateTo(actionType: ActionType) {
 //        switch actionType {
 //        case .createMatch:
-//            return
+//            guard let nav = Provider.navigationController else { return }
+//            let coordinator = GamesCoordinator(nav)
+//            coordinator.start()
 //            //Routing
 //        case .joinTournament:
 //            return

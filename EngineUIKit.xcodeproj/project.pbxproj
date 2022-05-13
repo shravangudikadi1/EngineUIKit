@@ -17,6 +17,13 @@
 		C1192A2B282D5D0E00C9A05E /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A26282D5D0E00C9A05E /* ActionView.swift */; };
 		C1192A2C282D5D0E00C9A05E /* FixedActionTileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A27282D5D0E00C9A05E /* FixedActionTileViewModel.swift */; };
 		C1192A2D282D5D0E00C9A05E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A28282D5D0E00C9A05E /* Action.swift */; };
+		C1192A48282DBEAB00C9A05E /* PagingCollectionView.xib in Headers */ = {isa = PBXBuildFile; fileRef = C1192A44282DBEAB00C9A05E /* PagingCollectionView.xib */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1192A49282DBEAB00C9A05E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A45282DBEAB00C9A05E /* CustomCell.swift */; };
+		C1192A4A282DBEAB00C9A05E /* PagingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A46282DBEAB00C9A05E /* PagingCollectionView.swift */; };
+		C1192A4B282DBEAB00C9A05E /* CollectionViewCell.xib in Headers */ = {isa = PBXBuildFile; fileRef = C1192A47282DBEAB00C9A05E /* CollectionViewCell.xib */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1192A5B282EC29D00C9A05E /* UtilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A5A282EC29D00C9A05E /* UtilityExtension.swift */; };
+		C1192A5C282ECA7800C9A05E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1192A47282DBEAB00C9A05E /* CollectionViewCell.xib */; };
+		C1192A5D282ECA7D00C9A05E /* PagingCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1192A44282DBEAB00C9A05E /* PagingCollectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,11 @@
 		C1192A26282D5D0E00C9A05E /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 		C1192A27282D5D0E00C9A05E /* FixedActionTileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedActionTileViewModel.swift; sourceTree = "<group>"; };
 		C1192A28282D5D0E00C9A05E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		C1192A44282DBEAB00C9A05E /* PagingCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagingCollectionView.xib; sourceTree = "<group>"; };
+		C1192A45282DBEAB00C9A05E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C1192A46282DBEAB00C9A05E /* PagingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingCollectionView.swift; sourceTree = "<group>"; };
+		C1192A47282DBEAB00C9A05E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		C1192A5A282EC29D00C9A05E /* UtilityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +95,12 @@
 		C114DB27282B17040060D19A /* EngineUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C1192A43282DBE7D00C9A05E /* PagingCollection */,
 				C1192A24282D5D0E00C9A05E /* FixedActions */,
 				C1192A22282D5D0E00C9A05E /* PlayActionView */,
 				C114DB3F282B1AD60060D19A /* UIButton */,
 				C114DB28282B17040060D19A /* EngineUIKit.h */,
+				C1192A5A282EC29D00C9A05E /* UtilityExtension.swift */,
 				C114DB29282B17040060D19A /* EngineUIKit.docc */,
 			);
 			path = EngineUIKit;
@@ -127,6 +141,17 @@
 			path = FixedActions;
 			sourceTree = "<group>";
 		};
+		C1192A43282DBE7D00C9A05E /* PagingCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C1192A47282DBEAB00C9A05E /* CollectionViewCell.xib */,
+				C1192A45282DBEAB00C9A05E /* CustomCell.swift */,
+				C1192A46282DBEAB00C9A05E /* PagingCollectionView.swift */,
+				C1192A44282DBEAB00C9A05E /* PagingCollectionView.xib */,
+			);
+			path = PagingCollection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -135,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C114DB36282B17040060D19A /* EngineUIKit.h in Headers */,
+				C1192A4B282DBEAB00C9A05E /* CollectionViewCell.xib in Headers */,
+				C1192A48282DBEAB00C9A05E /* PagingCollectionView.xib in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1192A5D282ECA7D00C9A05E /* PagingCollectionView.xib in Resources */,
+				C1192A5C282ECA7800C9A05E /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +271,10 @@
 				C114DB41282B1BB20060D19A /* EngineButton.swift in Sources */,
 				C1192A2D282D5D0E00C9A05E /* Action.swift in Sources */,
 				C1192A2A282D5D0E00C9A05E /* FixedActionTileView.swift in Sources */,
+				C1192A5B282EC29D00C9A05E /* UtilityExtension.swift in Sources */,
+				C1192A49282DBEAB00C9A05E /* CustomCell.swift in Sources */,
 				C1192A2C282D5D0E00C9A05E /* FixedActionTileViewModel.swift in Sources */,
+				C1192A4A282DBEAB00C9A05E /* PagingCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
