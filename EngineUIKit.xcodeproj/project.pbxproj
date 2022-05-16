@@ -24,6 +24,7 @@
 		C1192A5B282EC29D00C9A05E /* UtilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1192A5A282EC29D00C9A05E /* UtilityExtension.swift */; };
 		C1192A5C282ECA7800C9A05E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1192A47282DBEAB00C9A05E /* CollectionViewCell.xib */; };
 		C1192A5D282ECA7D00C9A05E /* PagingCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1192A44282DBEAB00C9A05E /* PagingCollectionView.xib */; };
+		C1A8BF44282F1A5C008F8A8D /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8BF43282F1A5C008F8A8D /* CustomSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C1192A46282DBEAB00C9A05E /* PagingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingCollectionView.swift; sourceTree = "<group>"; };
 		C1192A47282DBEAB00C9A05E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		C1192A5A282EC29D00C9A05E /* UtilityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtension.swift; sourceTree = "<group>"; };
+		C1A8BF43282F1A5C008F8A8D /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		C114DB27282B17040060D19A /* EngineUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C1A8BF42282F1A16008F8A8D /* SegmentedControl */,
 				C1192A43282DBE7D00C9A05E /* PagingCollection */,
 				C1192A24282D5D0E00C9A05E /* FixedActions */,
 				C1192A22282D5D0E00C9A05E /* PlayActionView */,
@@ -150,6 +153,14 @@
 				C1192A44282DBEAB00C9A05E /* PagingCollectionView.xib */,
 			);
 			path = PagingCollection;
+			sourceTree = "<group>";
+		};
+		C1A8BF42282F1A16008F8A8D /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				C1A8BF43282F1A5C008F8A8D /* CustomSegmentedControl.swift */,
+			);
+			path = SegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 				C1192A2D282D5D0E00C9A05E /* Action.swift in Sources */,
 				C1192A2A282D5D0E00C9A05E /* FixedActionTileView.swift in Sources */,
 				C1192A5B282EC29D00C9A05E /* UtilityExtension.swift in Sources */,
+				C1A8BF44282F1A5C008F8A8D /* CustomSegmentedControl.swift in Sources */,
 				C1192A49282DBEAB00C9A05E /* CustomCell.swift in Sources */,
 				C1192A2C282D5D0E00C9A05E /* FixedActionTileViewModel.swift in Sources */,
 				C1192A4A282DBEAB00C9A05E /* PagingCollectionView.swift in Sources */,
